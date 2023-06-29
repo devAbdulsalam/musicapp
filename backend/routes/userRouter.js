@@ -40,6 +40,3 @@ router
   .route("/apply/singer")
   .put(isAuthenticatedUser, authorizeRole("user"), applySinger);
 router.route("/latest/singer").get(latestArtists);
-
-
-// 
