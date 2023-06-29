@@ -10,7 +10,7 @@ require('dotenv').config();
 
 app.use(
 	cors({
-		origin: ['http://localhost:3000', 'https://music-api-o7q6.onrender.com'],
+		origin: ['http://localhost:3000', 'https://musicapp-frontend.vercel.app'],
 		credentials: true,
 	})
 );
