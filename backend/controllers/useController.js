@@ -55,7 +55,6 @@ exports.logout = async (req, res, next) => {
       expires: new Date(Date.now()),
       httpOnly: true,
     });
-
     await res
       .status(200)
       .json({ success: true, message: "logged out successfully" });
@@ -65,7 +64,6 @@ exports.logout = async (req, res, next) => {
 };
 
 //Get User Details
-
 exports.getUserDetails = async (req, res, next) => {
   try {
     const cookie = req.headers.cookie;
